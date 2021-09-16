@@ -59,7 +59,25 @@ void Error_Handler(void);
 
 /* Private defines -----------------------------------------------------------*/
 /* USER CODE BEGIN Private defines */
+#define LED_RED_Pin 				GPIO_PIN_1
+#define LED_GREEN_Pin 				GPIO_PIN_2
+#define LED_YELLOW_Pin 				GPIO_PIN_3
 
+#define LED_RED1_Pin 				GPIO_PIN_4
+#define LED_GREEN1_Pin 				GPIO_PIN_5
+#define LED_YELLOW1_Pin 			GPIO_PIN_6
+
+#define LED_GPIO_Port 				GPIOA
+
+#define SEVEN_SEGMENT_A				GPIO_PIN_0
+#define SEVEN_SEGMENT_B				GPIO_PIN_1
+#define SEVEN_SEGMENT_C				GPIO_PIN_2
+#define SEVEN_SEGMENT_D				GPIO_PIN_3
+#define SEVEN_SEGMENT_E				GPIO_PIN_4
+#define SEVEN_SEGMENT_F				GPIO_PIN_5
+#define SEVEN_SEGMENT_G				GPIO_PIN_6
+
+#define SEVEN_SEGMENT_PORT		GPIOB
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
