@@ -100,7 +100,8 @@ int main(void)
 //		  setNumberOnClock(i);
 //		  HAL_Delay(500);
 //	  }
-	  setNumberOnClock(4);
+	  //setNumberOnClock(4);
+	  clock_ledmatrix();
 	  set12Led();
   }
   /* USER CODE END 3 */

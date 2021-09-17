@@ -19,4 +19,6 @@ void clearAllClock(void);
 void setNumberOnClock(int num);
 // Ex9
 void clearNumberOnClock(int num);
+// Ex10
+void clock_ledmatrix(void);
 #endif /* INC_LED_MATRIX_H_ */

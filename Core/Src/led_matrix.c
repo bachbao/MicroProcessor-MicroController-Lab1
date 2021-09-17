@@ -11,6 +11,9 @@
 
 #define NUMBER_OF_LEDS	12
 
+static int clock_second = 0;
+static int clock_minute = 0;
+static int clock_hour = 0;
 static int buffer[NUMBER_OF_LEDS] = {0};
 
 void get_buffer_set(void){
@@ -81,7 +84,10 @@ void test_led(void){
 }
 
 void clearAllClock(void){
-	HAL_GPIO_WritePin(COL_PORT,COL_1|COL_2|COL_3|COL_4|COL_5,0);
+	//HAL_GPIO_WritePin(COL_PORT,COL_1|COL_2|COL_3|COL_4|COL_5,0);
+	for(int i = 0; i <NUMBER_OF_LEDS; i++ ){
+		buffer[i] = 0;
+	}
 }
 
 void setNumberOnClock(int num){
@@ -253,4 +259,27 @@ void set12Led(void){
 		else HAL_GPIO_WritePin(ROW_PORT,ROW_2,1);
 	}
 	else initial = HAL_GetTick();
+}
+
+void clock_ledmatrix(void){
+	static long long timer = 0;
+	if(HAL_GetTick()-timer >= 500){
+		clock_second += 1;
+		timer = HAL_GetTick();
+	}
+	if(clock_second >= 12){
+		clock_second = 0;
+		clock_minute += 1;
+	}
+	if(clock_minute >= 12){
+		clock_minute = 0;
+		clock_hour += 1;
+	}
+	if(clock_hour >= 12){
+		clock_hour = 0;
+	}
+	clearAllClock();
+	setNumberOnClock(clock_second);
+	setNumberOnClock(clock_minute);
+	setNumberOnClock(clock_hour);
 }
