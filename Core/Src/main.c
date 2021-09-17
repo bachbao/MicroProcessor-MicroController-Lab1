@@ -100,7 +100,7 @@ int main(void)
 //		  setNumberOnClock(i);
 //		  HAL_Delay(500);
 //	  }
-	  get_buffer_set();
+	  setNumberOnClock(4);
 	  set12Led();
   }
   /* USER CODE END 3 */

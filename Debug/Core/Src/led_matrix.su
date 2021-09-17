@@ -3,4 +3,5 @@ led_matrix.c:22:6:write_led_row_col	16	static
 led_matrix.c:74:6:test_led	16	static
 led_matrix.c:83:6:clearAllClock	8	static
 led_matrix.c:87:6:setNumberOnClock	16	static
-led_matrix.c:186:6:set12Led	64	static
+led_matrix.c:187:6:clearNumberOnClock	16	static
+led_matrix.c:191:6:set12Led	64	static
