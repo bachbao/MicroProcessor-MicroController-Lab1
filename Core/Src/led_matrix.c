@@ -68,3 +68,8 @@ void test_led(void){
 		}
 	}
 }
+
+void clearAllClock(void){
+	HAL_GPIO_WritePin(COL_PORT,COL_1|COL_2|COL_3|COL_4|COL_5,0);
+}
+
