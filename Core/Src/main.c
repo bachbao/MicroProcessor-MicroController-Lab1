@@ -96,10 +96,12 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	//test_led();
-	  for(int i = 0; i < 12; i++){
-		  setNumberOnClock(i);
-		  HAL_Delay(500);
-	  }
+//	  for(int i = 0; i < 12; i++){
+//		  setNumberOnClock(i);
+//		  HAL_Delay(500);
+//	  }
+	  get_buffer_set();
+	  set12Led();
   }
   /* USER CODE END 3 */
 }

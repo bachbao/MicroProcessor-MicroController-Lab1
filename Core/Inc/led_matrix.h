@@ -8,6 +8,8 @@
 #ifndef INC_LED_MATRIX_H_
 #define INC_LED_MATRIX_H_
 
+void get_buffer_set(void);
+void set12Led(void);
 // EX6
 void test_led(void);
 void write_led_row_col(int col, int row);
@@ -16,5 +18,5 @@ void clearAllClock(void);
 // Ex8
 void setNumberOnClock(int num);
 // Ex9
-void set12Led(void);
+void clearNumberOnClock(int num);
 #endif /* INC_LED_MATRIX_H_ */
