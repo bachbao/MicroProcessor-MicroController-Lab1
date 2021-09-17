@@ -13,4 +13,8 @@ void test_led(void);
 void write_led_row_col(int col, int row);
 // Ex7
 void clearAllClock(void);
+// Ex8
+void setNumberOnClock(int num);
+// Ex9
+void set12Led(void);
 #endif /* INC_LED_MATRIX_H_ */
