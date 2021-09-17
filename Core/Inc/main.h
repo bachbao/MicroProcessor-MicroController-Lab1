@@ -59,7 +59,22 @@ void Error_Handler(void);
 
 /* Private defines -----------------------------------------------------------*/
 /* USER CODE BEGIN Private defines */
+#define COL_PORT GPIOA
+#define ROW_PORT GPIOB
 
+#define COL_1 GPIO_PIN_1
+#define COL_2 GPIO_PIN_2
+#define COL_3 GPIO_PIN_3
+#define COL_4 GPIO_PIN_4
+#define COL_5 GPIO_PIN_5
+
+#define ROW_0 GPIO_PIN_0
+#define ROW_1 GPIO_PIN_1
+#define ROW_2 GPIO_PIN_2
+#define ROW_3 GPIO_PIN_3
+#define ROW_4 GPIO_PIN_4
+#define ROW_5 GPIO_PIN_5
+#define ROW_6 GPIO_PIN_6
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
